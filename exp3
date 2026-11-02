@@ -1,0 +1,39 @@
+install java 25
+
+install jenkins
+
+add path of java 25 on jenkins
+
+open google: http://localhost:8080
+
+open files go to: C:\Program Files\Jenkins\secrets
+or C:\ProgramData\Jenkins\.jenkins\secrets
+
+Find the file .
+copy pass & paste on jenkins select continue
+
+Select Install suggested plugins.
+do further procedure
+
+Open the Jenkins dashboard.
+Click New Item.
+Enter the project name: HelloWorld
+Select Freestyle project.
+Click OK.
+
+scroll down to the Build Steps section.
+Click Add build step.
+Select Execute Windows batch command.
+
+Enter the following program:
+echo Hello World
+echo Welcome to Jenkins
+click save
+
+Open your HelloWorld project.
+Click Build Now.
+Wait for the build to complete.
+Under Build History, click the latest build number (for example, #1).
+Click Console Output
+
+shows Finished: SUCCESS
